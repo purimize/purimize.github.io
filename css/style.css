@@ -1,0 +1,105 @@
+.main-view .main-viewport {
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/* INFO: Navigation Bar */
+.main-view .nav-bar {
+	position: absolute;
+	left: 0px;top: 0px;
+	width: 100vw;
+	min-height: 50px;min-width: 800px;
+}
+.main-view .nav-bar .nav-item {
+	float: right;
+	height: 50px;width: 25%;
+	color: white;
+	cursor: pointer;
+}
+.main-view .nav-bar .nav-item span:nth-child(2) {padding-left:5px;}
+.main-view .nav-bar .nav-item .oops-list{float: right;font-size: 25px;margin:20px;color: #737373;}
+.main-view .nav-bar .nav-item .oops-list:hover{color:white;}
+/* INFO: Tab Bar */
+.main-view .tab-bar {
+	position: absolute;
+	left: 0px;bottom: 0px;
+	width: 100vw;
+	min-height: 100px;min-width: 800px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.main-view .tab-bar:before {
+  position: absolute;
+  top: -50px;
+  left: calc(12.5% - 35px);
+  content: "";
+  height: 30px;
+  width: 50px;
+  background: transparent;
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 5000px rgb(42, 41, 41);
+}
+
+.main-view .tab-bar .tab-item {
+	float: left;
+	min-height: 100px;
+	height: 100px;width: 25vw;
+	color: #737373;
+	position:relative;
+}
+.main-view .tab-bar .tab-item:hover{color:white;}
+.main-view .tab-bar .tab-item .container {
+	color: #E6E9ED;
+	position: relative;
+	margin: 0;
+}
+
+.main-view .tab-bar .tab-item .container div span:first-child {color: #3BAFDA;}
+
+.main-view .tab-bar .tab-item .container .brace{
+	font-size: 2.5em;
+	position: relative;
+	color: #3BAFDA;
+}
+.main-view .tab-bar .tab-item .container .words {display: inline-block;}
+.main-view .tab-bar .tab-item .container .words div:first-child {font-size:1.5em;}
+.main-view .tab-bar .tab-item .container .words div:last-child {font-size:1em;}
+
+
+
+/* INFO: overlay menu */
+.overlay-menu {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	min-width: 100%;min-height: 100%;
+	width: 100vw;height: 100vh;
+	z-index: 999999;
+}
+.overlay-menu .container {
+	width:45em;height:41em;
+	margin:.5em auto;
+	background-color:rgb(0,0,0);
+	border:1px solid #737373;
+	border-radius:.25em;
+	color: rgb(193, 193, 193);
+	overflow:hidden;
+}
+.overlay-menu .container .head-bar .oops-cross{
+	float:right;margin:1em;
+	font-size:1.5em;color:#737373;
+	cursor:pointer;
+}
