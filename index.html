@@ -2,25 +2,34 @@
 <html class="viewport-fill fill-all" lang="en">
 <head>
 	<title>Purimize</title>
-
-
 	<meta http-equiv="Content-Security-Policy"
 		  content="default-src 'self' https://api.purimize.com 'unsafe-inline' 'unsafe-eval'; font-src 'self' data:;"/>
 	<meta charset="UTF-8"/>
-
 	<link type="text/css" rel="stylesheet"
 		  href="https://api.purimize.com/cache/lib/css/oops,oops.app,oops.ui-base,oops.ui-font"/>
+	<link type="text/css" rel="stylesheet" href="./css/swiper.min.css">
 	<link type="text/css" rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
 <div data-id="main-view" class="main-view parent-fill fill-all">
-	<div data-id="main-viewport" class="main-viewport"></div>
-	<div data-id="nav-bar" class="nav-bar">
-		<div data-id="menu" class="nav-item v-center"><span data-id="oops-list" class="oops-list"></span></div>
+	<div data-id="main-viewport" class="main-viewport">
+		<div class="swiper-container swiper-container-h">
+			<div class="swiper-wrapper">
+				<div data-comp-tpl="about-us"></div>
+				<div data-comp-tpl="opensource"></div>
+				<div data-comp-tpl="portfolio"></div>
+				<div data-comp-tpl="solution"></div>
+			    <div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
 	</div>
+
+	<div data-id="nav-bar" class="nav-bar">
+			<div data-id="menu" class="nav-item v-center"><span data-id="oops-list" class="oops-list"></span></div>
+		</div>
 	<div data-id="tab-bar" class="tab-bar">
-		<div data-id="about-us" class="about-us tab-item v-center t-center">
-			<div data-id="container" class="container" >
+		<div data-id="About-Us" class="tab-item v-center t-center">
+			<div data-id="container" class="container">
 				<span data-id="brace" class="brace"><</span>
 				<div class="words">
 					<div>Purimize</div>
@@ -31,29 +40,29 @@
 				<span data-id="brace" class="brace">/></span>
 			</div>
 		</div>
-		<div data-id="solution" class="tab-item  v-center t-center">Solution</div>
-		<div data-id="framework" class="tab-item  v-center t-center">Framework</div>
-		<div data-id="contact-us" class="contact-us tab-item v-center t-center">Contact Us</div>
+		<div data-id="Solution" class="tab-item  v-center t-center">Solution</div>
+		<div data-id="Portfolio" class="tab-item  v-center t-center">Portfolio</div>
+		<div data-id="OpenSource" class=" tab-item v-center t-center">OpenSource Project</div>
 	</div>
 </div>
 
 <div data-id="overlay-menu" class="overlay-menu v-center t-center fill-all parent-fill hidden">
 	<div data-id="container" class="container">
-		<div data-id="head-bar" class="head-bar"><div data-id="closeBtn" class="closeBtn"><span data-id="oops-cross" class="oops-cross"></span></div></div>
+		<div data-id="head-bar" class="head-bar">
+			<div data-id="closeBtn" class="closeBtn"><span data-id="oops-cross" class="oops-cross"></span></div>
+		</div>
 		<div data-id="tab-bar" class="tab-bar">
 			<div data-id="" class=""></div>
 			<div data-id="" class=""></div>
 			<div data-id="" class=""></div>
-
 		</div>
 		<div date-id="main-viewport" class="main-viewport"></div>
 	</div>
 </div>
 
 
-
-
-<script data-main="js/init" type="application/javascript"
-		src="https://api.purimize.com/cache/lib/js/jquery,jquery-tmpl,promise,promise-done,moment,oops,oops.string,oops.util,oops.runtime,oops.net,require"></script>
+	<script src="./js/extLib/swiper.min.js"></script>
+	<script data-main="js/init" type="application/javascript"
+			src="https://api.purimize.com/cache/lib/js/jquery,jquery-tmpl,promise,promise-done,moment,oops,oops.string,oops.util,oops.runtime,oops.net,require"></script>
 </body>
 </html>

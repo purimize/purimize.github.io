@@ -21,9 +21,4 @@
 
 
 
-	// region [ Dependency Resolver ]
-	define( [ 'require' ], function( require ){
-
-	});
-	// endregion
 })();

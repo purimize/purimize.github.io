@@ -10,9 +10,9 @@
 
 	// region [ Dependency Resolver ]
 	var sub_modules = [
-		'./about-us',
 		'./nav-bar',
-		'./overlay-menu'
+		'./overlay-menu',
+		'./tab-bar'
 	];
 
 	define( [ 'require' ], function( require ) {

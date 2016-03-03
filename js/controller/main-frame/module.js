@@ -1,3 +1,6 @@
+/**
+ * Created by world4jason on 2/22/16.
+ */
 (function() {
 
 	var kernel, apiInterface = {
@@ -16,9 +19,4 @@
 
 
 
-	// region [ Dependency Resolver ]
-	define( [ 'require' ], function( require ){
-
-	});
-	// endregion
 })();
